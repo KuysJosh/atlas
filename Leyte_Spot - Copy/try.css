@@ -1,0 +1,40 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: white;
+}
+
+.typing {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    height: auto;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 5vw;
+}
+
+#typing::after {
+    content: '|';
+    position: relative;
+    right: 0;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent
+    }
+    50% {
+        color: yellow;
+    }
+}

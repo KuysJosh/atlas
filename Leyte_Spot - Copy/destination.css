@@ -1,0 +1,491 @@
+/* ----------------------------------------NAVBAR START----------------------------------------------- */
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: white !important;
+}
+.upper{
+    height: 20px;
+    width: 100%;
+    background-color: #003153;
+   
+    }
+
+html {
+  scroll-behavior: smooth;
+}
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      nav {
+        background-color: white;
+        color: #003153;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000; /* Ensure it stays on top */
+      }
+      
+      .logo {
+        font-family: "Bakbak One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+        letter-spacing: 5px;
+        margin-left: 25px;
+        display: flex; /* Use flexbox */
+        align-items: center; /* Center items vertically */
+      }
+      
+      .logo img {
+        margin-right: 1px; /* Adjust as needed */
+        margin-top: -3px;
+      }
+      
+      .a {
+        height: 35px;
+        margin-top: 10px;
+      }
+      
+      ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      ul li {
+        margin-right: 20px;
+        margin-left: 15px;
+      }
+      
+      ul li a {
+        color: #003153;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-size: 12px;
+      }
+      
+      ul li a:hover {
+        color: #87cefa;
+      }
+      
+      ul li a::after {
+        content: "|";
+      
+      
+
+      }
+      
+      .checkbtn {
+        font-size: 30px;
+        color: #003153;
+        cursor: pointer;
+        display: none;
+      }
+      
+      #check {
+        display: none;
+      }
+      
+      @media (max-width: 768px) {
+        .checkbtn {
+          display: block;
+          order: 1;
+          margin-right: 20px;
+        }
+      
+        ul {
+          position: fixed;
+          top: 80px;
+          right: -100%;
+          background-color: #4682b4;
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s;
+      
+          
+        }
+      
+        ul li {
+          margin: 20px 0;
+        }
+      
+        ul li a {
+          font-size: 20px;
+        }
+      
+        #check:checked ~ ul {
+          right: 0;
+        }
+      }
+      
+
+
+      /* Line hover Effect ine */
+
+      a.centro:after {
+        content: "";
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0px;
+        transition: all .8s;
+      }
+      
+      a.centro:hover:after {
+        width: 100%;
+        background: #87cefa;
+      }
+      header {
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: transparent;
+        width: 80%; /* Adjust width as needed */
+        max-width: 600px; /* Optional: set a maximum width */
+        font-size: 25px;
+        z-index: 1; /* Ensure the header is above the video */
+        text-align: center; /* Center the content */
+      }
+      
+      header h1 {
+        font-family: 'Baloo 2', cursive;
+        margin-left: -130px; /* Adjust margin as needed for positioning */
+        background: linear-gradient(270deg,
+          #0000ff,  /* blue */
+          #1e90ff,  /* dodger blue */
+          #00bfff,  /* deep sky blue */
+          #87cefa,  /* light sky blue */
+          #add8e6,  /* light blue */
+          #4682b4,  /* steel blue */
+          #5f9ea0,  /* cadet blue */
+          #6495ed,  /* cornflower blue */
+          #00ced1,  /* dark turquoise */
+          #20b2aa,  /* light sea green */
+          #7fffd4,  /* aquamarine */
+          #40e0d0,  /* turquoise */
+          #48d1cc,  /* medium turquoise */
+          #afeeee   /* pale turquoise */
+        );
+        background-size: 400% 400%; /* Adjust background size if necessary */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient 8s ease infinite;
+        text-align: left; /* Ensure text is left-aligned */
+      }
+      
+      @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      
+      header .description {
+        font-family: 'Poppins', sans-serif;
+        color: white; /* Change font color to white */
+        margin-left: -130px;
+        text-align: left; /* Ensure text is left-aligned */
+      }
+      
+      /* Adjust header margins for smaller screens */
+      @media (max-width: 1024px) {
+        header {
+          margin-left: -60px; /* Adjust margin for medium screens */
+          top: 50%; /* Adjust top position for medium screens */
+        }
+      
+        header h1, header .description {
+          margin-left: -60px; /* Adjust margin for medium screens */
+        }
+      }
+      
+      @media (max-width: 768px) {
+        header {
+          margin-left: 0;
+          top: 50%; /* Adjust top position for smaller screens */
+          transform: translate(-50%, -50%);
+          width: 90%; /* Increase width for smaller screens */
+        }
+      
+        header h1 {
+          margin-left: 0;
+          font-size: 1.5rem; /* Decrease font size for smaller screens if necessary */
+        }
+      
+        header .description {
+          margin-left: 0;
+          font-size: 16px; /* Adjust font size for smaller screens if necessary */
+        }
+      }
+      
+      .barrier {
+        margin-left: 1px;
+      }
+
+
+/* ----------------------------------------NAVBAR END----------------------------------------------- */
+
+
+
+
+
+
+/* ----------------------------------------IMAGE DESIGN START----------------------------------------------- */
+
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap');
+
+/* Core Styles */
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+    background: #efefef;
+}
+
+section {
+  text-align: center;
+  padding: 1.5em 1em;
+}
+
+.header {
+  width: 960px;
+  margin: 1em auto;
+  text-align: center;
+  border-bottom: 2px solid rgba(29,29,29,0.6);
+  padding: 1em;
+}
+
+.header h1 {
+  margin-bottom: 0.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header a {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-weight: 700;
+  transition: all 0.35s ease-in-out;
+}
+
+.header a:hover {
+  color: #e99041;
+}
+
+.row {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.heading {
+    margin-bottom: 1em;
+}
+
+.figure {
+  background: #1d1d1d;
+  display: inline-block;
+  margin: 1px;
+  max-width: 180px;
+  min-width: 100px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.figure * {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+
+
+/* Section 1 - Hover Effect #01 */
+
+.section-6 {
+  background: #1d1d1d;
+  color: #efefef;
+}
+
+.section-6 .figure {
+  text-align: left;
+  background: #1d1d1d;
+  font-size: 16px;
+}
+
+.section-6 .figure img {
+  width: 100%;
+  height: 280px; /* Adjust this value as needed */
+  object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+.section-6 figcaption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  padding: 20px 30px;
+}
+
+.section-6 .figure figcaption:before,
+.section-6 .figure figcaption:after {
+  width: 1px;
+  height: 0;
+}
+
+.section-6 .figure figcaption:before {
+  right: 0;
+  top: 0;
+}
+
+.section-6 .figure figcaption:after {
+  left: 0;
+  bottom: 0;
+}
+
+.section-6 .figure h3,
+.section-6 .figure p {
+  line-height: 1.5em;
+}
+
+.section-6 .figure h3 {
+  margin: 0 0 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-6 .figure p {
+  font-size: 0.8em;
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+
+.section-6 .figure a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.section-6 .figure:before,
+.section-6 .figure:after,
+.section-6 .figure figcaption:before,
+.section-6 .figure figcaption:after {
+  position: absolute;
+  content: '';
+  background-color: #efefef;
+  z-index: 1;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+  opacity: 0.8;
+}
+
+.section-6 .figure:before,
+.section-6 .figure:after {
+  height: 1px;
+  width: 0%;
+}
+
+.section-6 .figure:before {
+  top: 0;
+  left: 0;
+}
+
+.section-6 .figure:after {
+  bottom: 0;
+  right: 0;
+}
+
+.section-6 .figure:hover img,
+.section-6 .figure.hover img {
+  opacity: 0.4;
+}
+
+.section-6 .figure:hover figcaption:before,
+.section-6 .figure.hover figcaption:before,
+.section-6 .figure:hover figcaption:after,
+.section-6 .figure.hover figcaption:after {
+  height: 100%;
+}
+
+.section-6 .figure:hover figcaption {
+  opacity: 1;
+}
+
+.section-6 .figure:hover:before,
+.section-6 .figure.hover:before,
+.section-6 .figure:hover:after,
+.section-6 .figure.hover:after {
+  width: 100%;
+}
+
+.section-6 .figure:hover:before,
+.section-6 .figure.hover:before,
+.section-6 .figure:hover:after,
+.section-6 .figure.hover:after,
+.section-6 .figure:hover figcaption:before,
+.section-6 .figure.hover figcaption:before,
+.section-6 .figure:hover figcaption:after,
+.section-6 .figure.hover figcaption:after {
+  opacity: 0.1;
+}
+
+/* Footer */
+
+footer.footer {
+  text-align: center;
+  color: #efefef;
+  background: #1d1d1d;
+  font-size: 0.8em;
+  padding-bottom: 1.5em;
+  font-style: italic;
+}
+/* Footer */
+
+footer.footer {
+  text-align: center;
+  color: #efefef;
+  background: #1d1d1d;
+  font-size: 0.8em;
+  padding-bottom: 1.5em;
+  font-style: italic;
+}
+
+body{
+    background-color: white;
+}
+/* ----------------------------------------IMAGE DESIGN END----------------------------------------------- */
+

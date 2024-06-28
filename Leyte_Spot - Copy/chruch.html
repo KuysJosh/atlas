@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="church.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/logo_letter.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Start-->
+    <div class="upper"></div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">
+            <img class="a" src="Images/logo_letter.ico" alt="Images/">TLAS
+        </label>
+        <ul>
+            <li><a class="centro" href="index.html">HOME</a></li><span class="barrier">|</span>
+            <li><a class="centro" href="index.html#sliders" id="gall">GALLERY</a></li><span class="barrier">|</span>
+            <li><a class="centro" href="#">DESTINATIONS</a></li><span class="barrier">|</span>
+            <li><a class="centro" href="about_us.html">ABOUT US</a></li>
+        </ul>
+    </nav> 
+    <!-- Navbar End-->
+
+    
+<!--  -->
+    <div class="video-container">
+        <video src="videos/church.mp4" controls autoplay loop muted></video>
+    </div>
+
+    <script>
+        // JavaScript for toggling the menu
+        const checkBtn = document.getElementById('check');
+        const navUl = document.querySelector('nav ul');
+
+        checkBtn.addEventListener('change', () => {
+            if (checkBtn.checked) {
+                navUl.style.right = '0';
+            } else {
+                navUl.style.right = '-100%';
+            }
+        });
+    </script>
+</body>
+</html>
